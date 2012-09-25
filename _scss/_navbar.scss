@@ -1,0 +1,62 @@
+//
+// Navbar
+// --------------------------------------------------
+
+
+// Left Nav Fly-Out navbar
+// -------------------------
+
+.wrap {
+  position: relative;
+  @include transition(all 0.3s ease-out);  
+  
+}
+.wrap.active {
+  left: 16em;
+}
+a.menu-link {
+    float: left;
+    display: block;
+    padding: 1em;
+    color:$white;
+}
+nav[role=navigation] {
+  background:$mainAccent;
+  clear: both;
+  overflow: hidden;
+  float:left;
+}
+
+.js nav[role=navigation] {
+  width: 16em;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -16em;
+}
+nav[role=navigation] ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #808080;
+}
+nav[role=navigation] li a {
+  display: block;
+  padding: 0.8em;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.topbar {
+  background:$mainAccent;
+  float:left;
+  width:100%;
+}
+.topbar h1 {
+  float:right;
+  font-size:$baseFontSize;
+  line-height:20px;
+  margin:0;
+  padding:1em;
+  a {
+    color:white;
+  }
+}
