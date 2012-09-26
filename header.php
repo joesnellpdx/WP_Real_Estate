@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * The Header for our theme.
  *
@@ -17,6 +17,7 @@
 
 <html <?php language_attributes(); ?>>
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php

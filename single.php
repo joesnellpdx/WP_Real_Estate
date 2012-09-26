@@ -8,12 +8,10 @@
 
 get_header(); ?>
 
-		<div id="primary" class="content-area">
-			<div id="content" class="site-content" role="main">
+		<div id="primary" class="content-area row-fluid">
+			<div id="content" class="site-content span8" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php wp_real_estate_content_nav( 'nav-above' ); ?>
 
 				<?php get_template_part( 'content', 'single' ); ?>
 
@@ -28,7 +26,10 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content .site-content -->
+			<div id="sidebar" class="sidebar-content span4" role="sidebar">
+				<?php get_sidebar(); ?>
+			</div>
 		</div><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

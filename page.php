@@ -16,7 +16,7 @@ get_header(); ?>
 		<div id="primary" class="content-area row-fluid"> 
 			<div id="content" class="site-content span8" role="main">
 
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?> 
 
 					<?php get_template_part( 'content', 'page' ); ?>
 

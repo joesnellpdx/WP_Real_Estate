@@ -1,5 +1,5 @@
 <?php
-/**
+/** 
  * The template for displaying the footer.
  *
  * Contains the closing of the id=main div and all content after
@@ -8,8 +8,9 @@
  * @since WP_Real_Estate 1.0
  */
 ?>
-		</div><!-- wrap -->
-	</div><!-- #inner-content -->
+		</div><!-- container-fluid -->
+	</div><!-- wrap -->
+	
 	<div class="footer-container">
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
@@ -20,8 +21,8 @@
 				<?php printf( __( 'Theme: %1$s by %2$s.', 'wp_real_estate' ), 'wp_real_estate', '<a href="https://github.com/joesnellpdx/WP_Real_Estate" rel="designer">Joe Snell</a>' ); ?>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon .site-footer -->
-	</div>
-</div><!-- #page .hfeed .site --><!-- #main .site-main -->
+	</div><!--footer-container-->
+</div><!-- #page .hfeed .site -->
 
 <?php wp_footer(); ?>
 

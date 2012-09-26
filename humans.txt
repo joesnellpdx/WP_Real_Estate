@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Joe Snell -- Developer & Designer -- @joesnellpdx
 
 # THANKS
 
-    <name>
+    Alisa Zwanger of Mambo Media!
 
 # TECHNOLOGY COLOPHON
 

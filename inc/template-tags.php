@@ -35,8 +35,8 @@ function wp_real_estate_content_nav( $nav_id ) {
 		$nav_class = 'site-navigation post-navigation';
 
 	?>
-	<nav role="navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
-		<h1 class="assistive-text"><?php _e( 'Post navigation', 'wp_real_estate' ); ?></h1>
+	<nav role="sub-navigation" id="<?php echo $nav_id; ?>" class="<?php echo $nav_class; ?>">
+		
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
