@@ -21,6 +21,9 @@ $white:                 #fff !default;
 // Accent colors
 // -------------------------
 $mainAccent:			#669900 !default;
+$brown:					#663300 !default;
+$brownLight:			#d6c299 !default;
+$brownMedium:			#7f4408 !default;
 $joeBlueLight:          #e6f2f4 !default;
 $blue:                  #049cdb !default;
 $blueDark:              #0064cd !default;
@@ -34,7 +37,7 @@ $purple:                #7a43b6 !default;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $white !default;
+$bodyBackground:        $brownLight !default;
 $textColor:             $grayDark !default;
 
 
@@ -77,6 +80,12 @@ $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !defa
 
 $btnInfoBackground:                 #5bc0de !default;
 $btnInfoBackgroundHighlight:        #2f96b4 !default;
+
+$btnBlueBackground:              #04c !default;
+$btnBlueBackgroundHighlight:     #08c !default;
+
+$btnBrownBackground:              $brown !default;
+$btnBrownBackgroundHighlight:     $brownMedium !default;
 
 $btnSuccessBackground:              #62c462 !default;
 $btnSuccessBackgroundHighlight:     #51a351 !default;

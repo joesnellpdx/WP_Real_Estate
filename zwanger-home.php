@@ -22,6 +22,14 @@ get_header('home'); ?>
 					<div class="head-description">
 						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 						<h3>Builder. Contractor. Real Estate Agent.</h3>
+						<div class="quick-links">
+							<p>
+								<a href="tel:+19542345917"><span class="icon-phone icon"></span></a>
+								<a  href="mailto:Paul.Zwanger@realliving.com?Subject=Web%20Contact"><span class="icon-envelope icon"></span></a>
+								<a href="https://twitter.com/pzwanger" target="_blank"><span  class="icon-twitter icon"></span></a>
+								<a href="#" class="btn btn-brown">Contact Me</a>
+							</p>
+						</div>
 					</div>
 					
 				</hgroup>

@@ -15,7 +15,8 @@
   @include clearfix();
 }
 .base-container {
-  margin-left:20px
+  margin-left:20px;
+  margin-bottom:$gridGutterWidth;
 }
 
 // Joe Add
@@ -23,9 +24,7 @@
   max-width:1020px;
   width:100%;
   margin:0 auto;
-}
-.site-footer {
-  margin:1em;
+  background-color:$white;
 }
 
 .entry-header .entry-meta {
@@ -38,7 +37,7 @@
 	margin: .5em 0;
 }
 #primary {
-	margin-top:$gridGutterWidth;
+	margin-top:0;
 }
 #content {
 	padding: 0 $gridGutterWidth;
@@ -76,4 +75,29 @@
 .sumgroup article {
   padding-top:.2em;
   padding-bottom:.5em;
+}
+.quick-links {
+  text-align:center;
+  width:100%;
+}
+.quick-links .icon {
+  font-size:18px;
+  line-height:1;
+  color:$brown;
+}
+.quick-links a {
+  margin:$gridGutterWidth / 3;
+}
+.icon:hover {
+  text-decoration:none;
+  color:$mainAccent;
+}
+// Footer
+.footer-container {
+  background-color:$brown;
+  padding:$gridGutterWidth ($gridGutterWidth *2) $gridGutterWidth ($gridGutterWidth *2);
+  color:white;
+}
+.site-footer {
+  margin:1em;
 }

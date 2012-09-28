@@ -88,6 +88,38 @@ function wp_real_estate_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	register_sidebar( array(
+		'name' => __( 'Footer 1', 'wp_real_estate' ),
+		'id' => 'footer-1',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Footer 2', 'wp_real_estate' ),
+		'id' => 'footer-2',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Footer 3', 'wp_real_estate' ),
+		'id' => 'footer-3',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Footer 4', 'wp_real_estate' ),
+		'id' => 'footer-4',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'wp_real_estate_widgets_init' );
 

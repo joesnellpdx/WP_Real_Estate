@@ -158,6 +158,14 @@ input[type="button"] {
 .btn-danger {
   @include buttonBackground($btnDangerBackground, $btnDangerBackgroundHighlight);
 }
+// Blue appears as blue
+.btn-blue {
+  @include buttonBackground($btnBlueBackground, $btnBlueBackgroundHighlight);
+}
+// Brown appears as brown
+.btn-brown {
+  @include buttonBackground($btnBrownBackground, $btnBrownBackgroundHighlight);
+}
 // Success appears as green
 .btn-success {
   @include buttonBackground($btnSuccessBackground, $btnSuccessBackgroundHighlight);

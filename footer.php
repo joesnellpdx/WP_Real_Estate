@@ -12,6 +12,28 @@
 	</div><!-- wrap -->
 	
 	<div class="footer-container">
+		<div id="footer-sidebar" class="secondary row-fluid">
+			<div id="footer1" class="span3">
+				<?php do_action( 'before_sidebar' ); ?>
+				<?php if ( ! dynamic_sidebar( 'footer-1' ) ) : ?>
+				<?php endif; // end sidebar widget area ?>
+			</div>
+			<div id="footer2" class="span3">
+				<?php do_action( 'before_sidebar' ); ?>
+				<?php if ( ! dynamic_sidebar( 'footer-2' ) ) : ?>
+				<?php endif; // end sidebar widget area ?>
+			</div>
+			<div id="footer3" class="span3">
+				<?php do_action( 'before_sidebar' ); ?>
+				<?php if ( ! dynamic_sidebar( 'footer-3' ) ) : ?>
+				<?php endif; // end sidebar widget area ?>
+			</div>
+			<div id="footer4" class="span3">
+				<?php do_action( 'before_sidebar' ); ?>
+				<?php if ( ! dynamic_sidebar( 'footer-4' ) ) : ?>
+				<?php endif; // end sidebar widget area ?>
+			</div>
+		</div>
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
