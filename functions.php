@@ -105,6 +105,8 @@ function wp_real_estate_scripts() {
 
 	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/_js/main-ck.js', array( 'jquery' ), '20120901', true  );
 
+	wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp.min.js', array( 'jquery' ), '20120823'  );
+
 
 	//wp_enqueue_script( 'main_js', get_template_directory_uri() . '/_js/main-ck.js', array( 'javascript' ), '20120206', true);
 
@@ -122,3 +124,16 @@ add_action( 'wp_enqueue_scripts', 'wp_real_estate_scripts' );
  * Implement the Custom Header feature
  */
 //require( get_template_directory() . '/inc/custom-header.php' );
+
+// Style Excerpt
+
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more($more) {
+       global $post;
+	return '<span class="read-more"> <a href="'. get_permalink($post->ID) . '">[read more]</a></span>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

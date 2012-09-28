@@ -6,13 +6,24 @@
 // Note: `.thumbnails` and `.thumbnails > li` are overriden in responsive files
 
 // Make wrapper ul behave like the grid
-.thumbnails {
+.thumbnails,
+.wp-caption {
   margin-left: -$gridGutterWidth;
   list-style: none;
   @include clearfix();
 }
+.wp-caption {
+  text-align:center;
+}
+#post-6 .wp-caption {
+  float:right;
+  margin: 0 0 5px 5px;
+  width:33.33%;
+  max-width:147px;
+}
 // Fluid rows have no left margin
-.row-fluid .thumbnails {
+.row-fluid .thumbnails,
+.row-fluid .wp-caption {
   margin-left: 0;
 }
 
@@ -24,7 +35,8 @@
 }
 
 // The actual thumbnail (can be `a` or `div`)
-.thumbnail {
+.thumbnail,
+.wp-caption {
   display: block;
   padding: 4px;
   line-height: $baseLineHeight;
@@ -34,19 +46,23 @@
   @include transition(all .2s ease-in-out);
 }
 // Add a hover state for linked versions only
-a.thumbnail:hover {
+a.thumbnail:hover,
+a.wp-caption:hover {
   border-color: $linkColor;
   @include box-shadow(0 1px 4px rgba(0,105,214,.25));
 }
 
 // Images and captions
-.thumbnail > img {
+.thumbnail > img,
+.wp-caption > img {
   display: block;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-.thumbnail .caption {
+.thumbnail .caption,
+.wp-caption .caption {
   padding: 9px;
   color: $gray;
 }
+

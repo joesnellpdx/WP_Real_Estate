@@ -14,15 +14,41 @@
 .wrap.active {
   left: 16em;
 }
-a.menu-link {
-    float: left;
+a.menu-link,
+a.call-link {
     display: block;
-    padding: 1em;
     color:$white;
+    background-color:$black;
+    height:100%;
+    @include box-sizing(border-box);
 }
+a.menu-link {
+  padding: 1em;
+  float:left;
+}
+a.call-link {
+  padding:1em;
+  float:right;
+  i {
+    font-size:2em;
+    margin:0;
+    @include transition(text-shadow .5s ease);
+  }
+}
+a.call-link:hover {
+  text-decoration:none;
+  i {
+    text-shadow: 1px 1px 20px $mainAccent,1px -1px 20px $mainAccent,-1px 1px 20px $mainAccent,1px -1px 20px $mainAccent;
+    @include transition(text-shadow .5s ease);
+  }
+}
+a.menu-link:hover {
+  text-decoration:none;
+}
+
 nav[role=navigation] {
-  background:$mainAccent;
-  clear: both;
+  background:$gray;
+  //clear: both;
   overflow: hidden;
   float:left;
 }
@@ -41,22 +67,47 @@ nav[role=navigation] ul {
 }
 nav[role=navigation] li a {
   display: block;
-  padding: 0.8em;
-  color: #fff;
+  padding: 1em;
+  color: $white;
   border-bottom: 1px solid #fff;
 }
 .topbar {
   background:$mainAccent;
   float:left;
   width:100%;
-}
-.topbar h1 {
-  float:right;
-  font-size:$baseFontSize;
-  line-height:20px;
-  margin:0;
-  padding:1em;
-  a {
-    color:white;
+  height:50px;
+  text-align:center;
+  @include box-sizing(border-box);
+  h1 {
+    font-size:$baseFontSize;
+    line-height:20px;
+    margin:0;
+    padding:1em;
   }
+  h2 {
+    font-size:$baseFontSize;
+    line-height:20px;
+    margin:0;
+    padding:1em;
+  }
+  h3 {
+    font-size:$baseFontSize;
+    line-height:20px;
+    margin:0;
+    padding:1em;
+  }
+  a {
+    color:$white;
+  }
+}
+.head-title h2 a {
+  font-size: 20px;
+  color:#334d00;
+  text-shadow: 1px 1px #82AA33, -1px -1px #000;
+}
+
+.head-title h2 a:hover {
+    text-decoration:none;
+    color:$white;
+    text-shadow:none;
 }

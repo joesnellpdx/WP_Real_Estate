@@ -14,3 +14,66 @@
   padding-left: $gridGutterWidth;
   @include clearfix();
 }
+.base-container {
+  margin-left:20px
+}
+
+// Joe Add
+#page {
+  max-width:1020px;
+  width:100%;
+  margin:0 auto;
+}
+.site-footer {
+  margin:1em;
+}
+
+.entry-header .entry-meta {
+	padding-bottom: .5em;
+	margin-bottom: .5em;
+	border-bottom: dotted 1px $grayLight;
+	font-family:$altFontFamily;
+}
+#nav-below {
+	margin: .5em 0;
+}
+#primary {
+	margin-top:$gridGutterWidth;
+}
+#content {
+	padding: 0 $gridGutterWidth;
+	@include box-sizing(border-box);
+}
+
+.site-description {
+  @include box-sizing(border-box);
+  font-size: 36px; 
+  line-height: 40px;
+}
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+} 
+// Home styles
+.home-title {
+  @include box-sizing(border-box);
+  padding-right:10px;
+}
+.home-summary {
+  @include hyphens();
+  h3 {
+    font-size:20px;
+    line-height:1;
+  }
+}
+.sumgroup article {
+  padding-top:.2em;
+  padding-bottom:.5em;
+}

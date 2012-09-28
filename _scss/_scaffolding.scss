@@ -14,14 +14,7 @@ body {
   color: $textColor;
   background-color: $bodyBackground;
 }
-#page {
-  max-width:1200px;
-  width:100%;
-  margin:0 auto;
-}
-.site-footer {
-  margin:1em;
-}
+
 
 // Links
 // -------------------------
@@ -36,8 +29,19 @@ a:hover {
 }
 
 
-// Images
+// Images & Video
 // -------------------------
+
+// Img border in a's and image quality
+// -------------------------
+
+img {
+  max-width: 100%; // Make images inherently responsive
+  height: auto; // Make images inherently responsive
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
 
 .img-rounded {
   @include border-radius(6px);
@@ -56,5 +60,12 @@ a:hover {
 .img-circle {
   @include border-radius(500px);
 }
+iframe {
+  width:100%;
+  padding:.5em;
+  @include box-sizing(border-box);
+
+}
+
 
 

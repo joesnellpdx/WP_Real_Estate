@@ -69,17 +69,13 @@
 
 			<div class="topbar">
 				<a href="#menu" class="menu-link">Menu</a>
-				<a href="tel:+18005550199" class="call-link"><i class="icon-phone"></i></a>
+				<a href="tel:+19542345917" class="call-link"><i class="icon-phone"></i></a>
 				<nav id="menu" role="navigation" class="site-navigation main-navigation">
 
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</nav>
-				<hgroup class="hgroup">
-					<div class="head-title">
-						<h2 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
-					</div>
-					
-				</hgroup>
+				
 			</div>
+
 			
-			<div class="container-fluid base-container">
+			<div class="container-fluid">

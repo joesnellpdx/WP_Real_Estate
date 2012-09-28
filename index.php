@@ -17,6 +17,10 @@ get_header(); ?>
 		<div id="primary" class="content-area row-fluid">
 			<div id="content" class="site-content span8" role="main">
 
+			<div class="head-page-title">
+				<h1 class="brand-base"><?php wp_title( " " ); ?></h1>
+			</div>
+
 			<?php if ( have_posts() ) : ?>
 
 

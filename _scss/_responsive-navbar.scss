@@ -23,4 +23,12 @@
   nav[role=navigation] li a {
     border: 0;
   }
+  .head-title h2 a {
+  font-size:17px;
+}
+}
+@media screen and (min-width: 767px) {
+  .head-title h2 a {
+  font-size:20px;
+}
 }

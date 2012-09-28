@@ -5,11 +5,6 @@
 
 @media (max-width: 767px) {
 
-  // Padding to set content in a bit
-  body {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   // Negative indent the now static "fixed" navbar
   .navbar-fixed-top,
   .navbar-fixed-bottom,
@@ -19,7 +14,7 @@
   }
   // Remove padding on container given explicit padding set on body
   .container-fluid {
-    padding: 0;
+    margin:0;
   }
 
   // TYPOGRAPHY
@@ -105,6 +100,29 @@
     margin: 0;
     &.fade.in { top: auto; }
   }
+  // HOME Styling
+.home-title h1 {
+  padding-top:.5em;
+  line-height:1em;
+  text-align:center;
+  font-size:50px;
+}
+
+.head-description h2 {
+  line-height:1em;
+  text-align:center;
+  font-size:30px;
+}
+.head-description h3 {
+  font-size: 16px;
+  line-height:1em;
+  text-align:center;
+}
+#sidebar {
+  position:absolute;
+  right:-500em;
+}
+
 
 }
 
@@ -170,5 +188,11 @@
   .carousel-caption {
     position: static;
   }
+  .home-title h1 {
+  padding-top:.5em;
+  line-height:1em;
+  text-align:center;
+  font-size:40px;
+}
 
 }
