@@ -10,8 +10,9 @@
 
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 .container-fluid {
-  padding-right: $gridGutterWidth;
-  padding-left: $gridGutterWidth;
+  padding-left:$gridGutterWidth;
+  padding-right:$gridGutterWidth;
+  margin:0;
   @include clearfix();
 }
 .base-container {
@@ -40,7 +41,6 @@
 	margin-top:0;
 }
 #content {
-	padding: 0 $gridGutterWidth;
 	@include box-sizing(border-box);
 }
 
@@ -101,3 +101,5 @@
 .site-footer {
   margin:1em;
 }
+// Sidebar
+

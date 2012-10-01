@@ -1,12 +1,12 @@
-<?php
-/**
+<?php 
+/** 
  * The template for displaying 404 pages (Not Found).
  *
  * @package WP_Real_Estate
  * @since WP_Real_Estate 1.0
  */
 
-get_header(); ?>
+get_header(); ?> 
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">

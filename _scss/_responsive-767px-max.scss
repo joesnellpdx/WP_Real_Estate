@@ -65,6 +65,10 @@
     width: 100%;
     @include box-sizing(border-box);
   }
+  // Sidebar 
+  #sidebar {
+    display:none;
+  }
 
   // FORM FIELDS
   // -----------
@@ -100,29 +104,6 @@
     margin: 0;
     &.fade.in { top: auto; }
   }
-  // HOME Styling
-.home-title h1 {
-  padding-top:.5em;
-  line-height:1em;
-  text-align:center;
-  font-size:50px;
-}
-
-.head-description h2 {
-  line-height:1em;
-  text-align:center;
-  font-size:30px;
-}
-.head-description h3 {
-  font-size: 16px;
-  line-height:1em;
-  text-align:center;
-}
-#sidebar {
-  position:absolute;
-  right:-500em;
-}
-
 
 }
 
@@ -188,11 +169,5 @@
   .carousel-caption {
     position: static;
   }
-  .home-title h1 {
-  padding-top:.5em;
-  line-height:1em;
-  text-align:center;
-  font-size:40px;
-}
 
 }

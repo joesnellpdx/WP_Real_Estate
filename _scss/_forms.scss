@@ -43,6 +43,7 @@ button,
 select,
 textarea {
   @include font-shorthand($baseFontSize, normal, $baseLineHeight); // Set size, weight, line-height here
+  max-width:100%;
 }
 input,
 button,

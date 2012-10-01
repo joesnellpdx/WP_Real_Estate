@@ -7,12 +7,35 @@
 
   // add left margin
   .container-fluid {
-    
+  	margin:0;
+    padding-right: $gridGutterWidth;
+    padding-left: $gridGutterWidth;
   }
+    
+  
   #primary {
 	margin-top:$gridGutterWidth;
 }
+#content {
+  padding: 0 $gridGutterWidth;
+  }
+.home-title h1 {
+  padding-top:.5em;
+  line-height:1em;
+  text-align:center;
+  font-size:50px;
+}
 
-  
+.head-description h2 {
+  line-height:1em;
+  text-align:center;
+  font-size:30px;
+}
+.head-description h3 {
+  font-size: 16px;
+  line-height:1em;
+  text-align:center;
 
 }
+
+ } 

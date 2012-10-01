@@ -63,7 +63,7 @@ function wp_real_estate_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'wp_real_estate' ),
+		'primary' => __( 'Primary Navigation', 'wp_real_estate' ),
 	) );
 
 	/**
