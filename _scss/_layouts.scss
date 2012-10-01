@@ -12,11 +12,10 @@
 .container-fluid {
   padding-left:$gridGutterWidth;
   padding-right:$gridGutterWidth;
-  margin:0;
+  margin-top:50px;
   @include clearfix();
 }
 .base-container {
-  margin-left:20px;
   margin-bottom:$gridGutterWidth;
 }
 

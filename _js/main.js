@@ -4,20 +4,22 @@
 
 jQuery(document).ready(function($) {
 
-	$('body').addClass('js');
-  
+$('body').addClass('js');
   var $menu = $('#menu'),
-    $menulink = $('.menu-link'),
-    $wrap = $('#wrap');
+    $menulink = $('.menu-link');
+    $containerfluid = $('.container-fluid');
   
-  $menulink.click(function() {
-    $menulink.toggleClass('active');
-    $wrap.toggleClass('active');
-    return false;
-	});
+$menulink.click(function() {
+  $menulink.toggleClass('active');
+  $menu.toggleClass('active');
+  $containerfluid.toggleClass('active');
+  return false;
+});
 
-  	setTimeout(function () {
-	  window.scrollTo(0, 1);
+  setTimeout(function () {
+	 window.scrollTo(0, 1);
 	}, 1000);
+
+
 
 });

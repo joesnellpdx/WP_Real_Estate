@@ -48,6 +48,7 @@ Using scss for this project, actual css files will be found in the _css folder.
 // Components: Misc
 @import "thumbnails";
 @import "progress-bars";
+@import "modals";
 
 // Utility classes
 @import "utilities"; // Has to be last to override when necessary

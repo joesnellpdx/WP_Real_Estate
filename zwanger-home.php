@@ -21,10 +21,10 @@ get_header('home'); ?>
 					</div>
 					<div class="head-description">
 						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-						<h3>Builder. Contractor. Real Estate Agent.</h3>
+						<h3>Real Estate Agent. Builder. Contractor.</h3>
 						<div class="quick-links">
 							<p>
-								<a href="#" class="btn btn-brown">Contact Me</a>
+								<a href="http://www.boomerhomeadvisor.com/contact/" class="btn btn-brown">Contact Me</a>
 							</p>
 						</div>
 					</div>
