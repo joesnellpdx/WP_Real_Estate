@@ -47,10 +47,14 @@ a.menu-link:hover {
     .js nav[role=navigation] {
       overflow: hidden;
       max-height: 0;
+      margin-top:0px;
+      float:left;
+      width:100%;
     }
     nav[role=navigation].active {
       max-height: 15em;
-      padding-top:50px;
+      margin-top:0px;
+      width:100%;
     }
     .container-fluid.active {
       margin-top:0px;
@@ -68,7 +72,7 @@ a.menu-link:hover {
 
 .topbar {
   background:$mainAccent;
-  position:absolute;
+  float:right;
   width:100%;
   height:50px;
   text-align:center;

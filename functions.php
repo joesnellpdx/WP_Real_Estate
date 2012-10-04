@@ -136,6 +136,8 @@ function wp_real_estate_scripts() {
 	//wp_enqueue_script( 'modernizer', get_template_directory_uri() . '/_js/vendor/modernizr-2.6.1-respond-1.1.0.min.js', array( 'javascript' ), '20120206');
 
 	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/_js/main-ck.js', array( 'jquery' ), '20120901', true  );
+	
+	wp_enqueue_script( 'flexslider_js', get_template_directory_uri() . '/_js/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '20120901', true  ); 
 
 	wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp.min.js', array( 'jquery' ), '20120823'  );
 
@@ -169,3 +171,54 @@ function new_excerpt_more($more) {
 	return '<span class="read-more"> <a href="'. get_permalink($post->ID) . '">[read more]</a></span>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+// Gallery to Slideshow Settings
+
+
+
+function my_gallery_to_slideshow_settings( $params ){
+    /*
+        'thumbnails'        => true,
+        'slideshow'         => true,
+        'slideshowSpeed'    => 7000,
+        'animationDuration' => 600,
+        'mousewheel'        => false,
+        'controlNav'        => false,
+        'keyboardNav'       => false,
+        'directionNav'      => false,
+        'manualControls'    => '.pager li a img',
+        'pausePlay'         => false,
+        'prevText'          => __( "Previous", 'mv-gallery-to-slideshow' ),
+        'nextText'          => __( "Next", 'mv-gallery-to-slideshow' ),
+        'pauseText'         => __( "Pause", 'mv-gallery-to-slideshow' ),
+        'randomize'         => false,
+        'slideToStart'      => 0,
+        'animationLoop'     => true,
+        'pauseOnAction'     => true,
+        'pauseOnHover'      => false,
+        'controlsContainer' => '',
+    */
+    $params = array(
+	 'thumbnails'        => false,
+	 'slideshow'         => true,
+	 'slideshowSpeed'    => 7000,
+	 'animationDuration' => 600,
+	 'mousewheel'        => false,
+	 'controlNav'        => false,
+	 'keyboardNav'       => false,
+	 'directionNav'      => false,
+	 'manualControls'    => '.pager li a img',
+	 'pausePlay'         => false,
+	 'prevText'          => __( "Previous", 'mv-gallery-to-slideshow' ),
+	 'nextText'          => __( "Next", 'mv-gallery-to-slideshow' ),
+	 'pauseText'         => __( "Pause", 'mv-gallery-to-slideshow' ),
+	 'randomize'         => false,
+	 'slideToStart'      => 0,
+	 'animationLoop'     => true,
+	 'pauseOnAction'     => true,
+	 'pauseOnHover'      => false,
+	 'controlsContainer' => '',
+	);
+    return $params;
+}
+add_filter( 'mv_gallery_to_slideshow_js_params', 'my_gallery_to_slideshow_settings' );

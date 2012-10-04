@@ -46,6 +46,7 @@ Using scss for this project, actual css files will be found in the _css folder.
 
 
 // Components: Misc
+@import "gallery-to-slideshow";
 @import "thumbnails";
 @import "progress-bars";
 @import "modals";
