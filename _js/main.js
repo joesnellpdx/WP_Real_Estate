@@ -20,4 +20,11 @@ $menulink.click(function() {
 	 window.scrollTo(0, 1);
 	}, 1000);
 
+
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+
 });
