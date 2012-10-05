@@ -1,47 +1,46 @@
 /*=Wrapper
 -------------------------------------------------------------- */
 div.gallery-to-slideshow-wrapper {
-	width: 90%;
+	width: 85%;
 	border: 1px solid #D2D6DB;
 	overflow: hidden;
 	padding: 1em 1em 0;
 	margin: 0 auto 2.5em auto;
 	position: relative;
-	background: #fdfdfd;
+	background: $gray;
 	clear: both;
 	display: block;
-	border-top-right-radius: 1em;
-	-moz-border-radius-topright: 1em;
-	-webkit-border-top-right-radius: 1em;
-	border-top-left-radius: 1em;
-	-moz-border-radius-topleft: 1em;
-	-webkit-border-top-left-radius: 1em;
+	@include border-radius(1em);
 }
 /* =Header
 -------------------------------------------------------------- */
 .gallery-to-slideshow-header {
+	font-size: 24px; 
 	overflow: hidden;
 	padding: 1em;
 	margin: 0 auto 1em;
 	clear: both;
 	display: block;
-	font: bold 0.9em georgia, verdana, arial;
-	text-transform: uppercase;
-	letter-spacing: 0.17em;
-	text-indent: 0;
-	text-shadow: #fff 0 1px;
+	font-family: $baseFontFamily;
+	font-weight: normal;
+	line-height: 1;
+	color: $mainAccent;
+	text-rendering: optimizelegibility; // Fix the character spacing for headings
+  
 }
 .gallery-to-slideshow-title {
 	width:40%;
-	float: left;
-	clear: none;
-	text-align:left;
-}
-.gallery-to-slideshow-caption {
-	width:60%;
 	float: right;
 	clear: none;
 	text-align:right;
+	@include box-sizing(border-box);
+}
+.gallery-to-slideshow-caption {
+	width:60%;
+	float: left;
+	clear: none;
+	text-align:left;
+	@include box-sizing(border-box);
 }
 .gallery-to-slideshow-title, .gallery-to-slideshow-caption {
 	margin-bottom: 0;
@@ -69,6 +68,7 @@ div.gallery-to-slideshow-wrapper {
 	display: block; 
 	height:auto;
 	margin:0 auto;
+	@include border-radius(1em);
 }
 .gallery-to-slideshow  .slides:after { 
 	content: "."; 
@@ -87,6 +87,7 @@ html[xmlns] .gallery-to-slideshow .slides {
 .no-js .gallery-to-slideshow  .slides > li:first-child {
 	display: block;
 }
+
 /* =Pager
 -------------------------------------------------------------- */
 .gallery-to-slideshow .pager {
@@ -97,29 +98,51 @@ html[xmlns] .gallery-to-slideshow .slides {
 	overflow: hidden;
 }
 .gallery-to-slideshow .pager li {
-	display: inline-block;
-	margin-bottom:1em;
-	vertical-align:top;
+
+	margin: 0 6px;
+display: inline-block;
+zoom: 1;
 }
 .gallery-to-slideshow .pager li a {
-	background: white;
-	border: 1px solid #c8cdd3;
-	display: block;
-	height: 2.9em;
-	width: 3em;
-	margin-right: 0.5em;
-	opacity: 0.5;
-	padding: 0.4em;
-	overflow:hidden;
+width: 11px;
+height: 11px;
+display: block;
+background: #666;
+background: rgba(0, 0, 0, 0.5);
+cursor: pointer;
+text-indent: -9999px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+-o-border-radius: 20px;
+border-radius: 20px;
+box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 }
+
 .gallery-to-slideshow .pager li a img {
 	width: 3em;
 	height: 2.9em;
 }
 .gallery-to-slideshow .pager li.active a {
-	opacity: 1;
-	border-color: lightgrey;
+background: black;
+background: rgba(0, 0, 0, 0.9);
+cursor: default;
 }
+.flex-direction-nav {
+	text-align:center;
+	width:50%;
+	margin:0 auto;
+	padding: 3% 0 8% 0;
+}
+.flex-direction-nav li {
+	list-style-type:none;
+}
+.flex-direction-nav li:first-child {
+	float:left;
+}
+.flex-direction-nav li:last-child {
+	float:right;
+}
+
 /* =Captions
 -------------------------------------------------------------- */
 .gallery-to-slideshow .slides{
@@ -127,7 +150,7 @@ html[xmlns] .gallery-to-slideshow .slides {
 	position: relative;
 }
 .gallery-to-slideshow .flex-caption {
-	width: 100%;
+	width: 100%;	
 	padding: 3% 0;
 	position: absolute;
 	left: 0;
@@ -151,11 +174,11 @@ html[xmlns] .gallery-to-slideshow .slides {
 /* =Small
 -------------------------------------------------------------- */
 @media ( max-width: 959px ) {
-	.gallery-to-slideshow-title {
+	.gallery-to-slideshow-caption {
 		width: 100%;
 		text-align: center;
 		}
-	.gallery-to-slideshow-caption {
+	.gallery-to-slideshow-title {
 		display: none;
 		}
 }

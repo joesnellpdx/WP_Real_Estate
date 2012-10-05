@@ -589,3 +589,43 @@ Load paths:
 2012-10-04 14:09:03 overwrite _css/base.css 
 2012-10-04 14:13:17 overwrite _css/responsive.css 
 2012-10-04 14:13:55 identical _css/base.css 
+2012-10-04 14:27:57 overwrite _css/base.css 
+2012-10-04 14:32:12     error _scss/base.scss (Line 166 of _scss/_gallery-to-slideshow.scss: Invalid CSS after "}": expected "}", was "")
+2012-10-04 14:32:12 overwrite _css/base.css 
+2012-10-04 14:32:29 overwrite _css/base.css 
+2012-10-04 14:33:21 identical _css/base.css 
+2012-10-04 14:34:06 overwrite _css/base.css 
+2012-10-04 14:35:36     error _scss/base.scss (Line 119 of _scss/_gallery-to-slideshow.scss: Invalid CSS after "...ger li a:active": expected "{", was "; {")
+2012-10-04 14:35:36 overwrite _css/base.css 
+2012-10-04 14:35:47 identical _css/base.css 
+2012-10-04 14:37:50 overwrite _css/base.css 
+2012-10-04 14:39:39 identical _css/base.css 
+2012-10-04 14:43:43 overwrite _css/base.css 
+2012-10-04 14:44:13 overwrite _css/base.css 
+2012-10-04 14:46:34 overwrite _css/base.css 
+2012-10-04 14:49:57 overwrite _css/base.css 
+2012-10-04 14:50:42 overwrite _css/base.css 
+2012-10-04 14:51:34 identical _css/base.css 
+2012-10-04 14:54:14 overwrite _css/base.css 
+2012-10-04 14:55:04 overwrite _css/base.css 
+2012-10-04 14:55:27 overwrite _css/base.css 
+2012-10-04 14:57:04 overwrite _css/base.css 
+2012-10-04 15:13:15 identical _css/base.css 
+2012-10-04 15:14:40 overwrite _css/base.css 
+2012-10-04 15:26:53     error _scss/base.scss (Line 162 of _scss/_gallery-to-slideshow.scss: Undefined mixin 'gradien-vertical'.)
+2012-10-04 15:26:53 overwrite _css/base.css 
+2012-10-04 15:27:10     error _scss/base.scss (Line 162 of _scss/_gallery-to-slideshow.scss: Undefined mixin 'gradien-vertical'.)
+2012-10-04 15:27:10 overwrite _css/base.css 
+2012-10-04 15:27:25 identical _css/base.css 
+2012-10-04 15:29:18 overwrite _css/base.css 
+2012-10-04 15:30:25 overwrite _css/base.css 
+2012-10-04 15:34:00 identical _css/base.css 
+2012-10-04 15:34:31 identical _css/base.css 
+2012-10-04 15:38:23 identical _css/base.css 
+2012-10-04 15:40:04 identical _css/base.css 
+2012-10-04 15:43:04 overwrite _css/base.css 
+2012-10-04 15:44:11 identical _css/base.css 
+2012-10-04 15:45:15 identical _css/base.css 
+2012-10-04 15:46:01 overwrite _css/base.css 
+2012-10-04 15:46:27 identical _css/base.css 
+2012-10-04 15:47:51 identical _css/base.css 
