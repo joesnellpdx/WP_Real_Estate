@@ -177,30 +177,11 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 
 function my_gallery_to_slideshow_settings( $params ){
-    /*
-        'thumbnails'        => true,
-        'slideshow'         => true,
-        'slideshowSpeed'    => 7000,
-        'animationDuration' => 600,
-        'mousewheel'        => false,
-        'controlNav'        => false,
-        'keyboardNav'       => false,
-        'directionNav'      => false,
-        'manualControls'    => '.pager li a img',
-        'pausePlay'         => false,
-        'prevText'          => __( "Previous", 'mv-gallery-to-slideshow' ),
-        'nextText'          => __( "Next", 'mv-gallery-to-slideshow' ),
-        'pauseText'         => __( "Pause", 'mv-gallery-to-slideshow' ),
-        'randomize'         => false,
-        'slideToStart'      => 0,
-        'animationLoop'     => true,
-        'pauseOnAction'     => true,
-        'pauseOnHover'      => false,
-        'controlsContainer' => '',
-    */
+
     $params = array(
 	 'thumbnails'        => false,
 	 'slideshow'         => true,
+	 'animation'		 => slide,
 	 'slideshowSpeed'    => 7000,
 	 'animationDuration' => 600,
 	 'mousewheel'        => false,

@@ -90,9 +90,23 @@ h4 small { font-size: 14px; }
   font-size:18px;
   line-height:20px;
 }
-.widget-title {
-  font-size:18px;
+#searchform .assistive-text {
+  display: none;
 }
+.sumgroup h2,
+#sidebar .widget-title,
+.building_title_wrapper h3,
+.wpp_the_content h3  {
+  background:$mainAccent;
+  color:white;
+  font-size:($baseFontSize + 2);
+  padding-left:$gridGutterWidth;
+
+}
+article .entry-title h2 {
+  font-family:$baseFontFamily;
+}
+
 #post-6 h2 {
   font-size:1.2em;
   line-height:1;
@@ -128,6 +142,8 @@ h4 small { font-size: 14px; }
   font-size: 14px;
   line-height:1em;
   text-align:center;
+  font-weight:normal;
+  font-family:$baseFontFamily;
 }
 
 // Page header
@@ -341,3 +357,6 @@ address {
   font-style: normal;
   line-height: $baseLineHeight;
 }
+
+
+

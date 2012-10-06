@@ -1,16 +1,21 @@
 /*=Wrapper
 -------------------------------------------------------------- */
-div.gallery-to-slideshow-wrapper {
-	width: 85%;
-	border: 1px solid #D2D6DB;
+.wpp_the_content {
+	
+}
+  div.gallery-to-slideshow-wrapper {
+	width: auto;
 	overflow: hidden;
 	padding: 1em 1em 0;
 	margin: 0 auto 2.5em auto;
 	position: relative;
-	background: $gray;
+	background: none;
 	clear: both;
 	display: block;
-	@include border-radius(1em);
+	border: 1px solid #ddd;
+	@include border-radius(4px);
+	@include box-shadow(0 1px 3px rgba(0,0,0,.055));
+	@include transition(all .2s ease-in-out);
 }
 /* =Header
 -------------------------------------------------------------- */
@@ -68,7 +73,6 @@ div.gallery-to-slideshow-wrapper {
 	display: block; 
 	height:auto;
 	margin:0 auto;
-	@include border-radius(1em);
 }
 .gallery-to-slideshow  .slides:after { 
 	content: "."; 
@@ -184,7 +188,36 @@ cursor: default;
 }
 
 // FLEXSLIDER
+.flexslider {
+  border: 1px solid #ddd;
+  @include border-radius(4px);
+  @include box-shadow(0 1px 3px rgba(0,0,0,.055));
+  @include transition(all .2s ease-in-out);
 
- .flexslider ul {
+}
+ .flex-viewport ul {
  	margin:0;
  }
+
+
+.slides {
+  position:relative;
+}
+.slides .wp-caption-text {
+  position:absolute;
+  margin-top:-50px;
+  height:50px;
+  padding-left:($gridGutterWidth * 5);
+  background-color:rgba(0,100,205,.5);
+  width:100%;
+  list-style-type:none;
+  color:white;
+  @include box-sizing(border-box);
+}
+.property_image .thumbnail {
+  margin:0;
+  padding:0;
+}
+.flex-control-nav {
+	display:none;
+}
