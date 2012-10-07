@@ -90,6 +90,10 @@ h4 small { font-size: 14px; }
   font-size:18px;
   line-height:20px;
 }
+.about-sub {
+  font-family:$baseFontFamily;
+  color:$blue;
+}
 #searchform .assistive-text {
   display: none;
 }
@@ -246,18 +250,20 @@ ul.chirp li {
 .widget li {
   padding: .5em;
 }
-.footer-widget li {
+.footer-widget li,
+.property_widget_block {
   padding:.25em;
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
-  
   border-top: thin solid darken($brownLight, 40%);
   border-bottom: thin solid darken($brown, 10%);
 }
-.footer-widget li:first-child {
+.footer-widget li:first-child,
+.property_widget_block:first-child {
   border-top:none;
 }
-.footer-widget li:last-child {
-  border-bottom:none;
+.footer-widget li:last-child,
+.property_widget_block:last-child {
+  border-bottom:green;
 }
 ul.chirp li:first-child,
 .widget li:first-child {

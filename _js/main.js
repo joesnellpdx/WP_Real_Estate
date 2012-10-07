@@ -16,12 +16,15 @@ $menulink.click(function() {
   return false;
 });
 
-  $('.flexslider').flexslider({
+$(window).load(function() {
+    $('.flexslider').flexslider({
     animation: "slide",
     prevText: "&lt; Previous",
     nextText: "Next &gt;"
 
-  });
+   });
+  
+});
 
   setTimeout(function () {
 	 window.scrollTo(0, 1);

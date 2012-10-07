@@ -56,12 +56,15 @@
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/_ico/apple-touch-icon-57-precomposed.png">
 
 <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
 	        <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
+
+        
 
 <div id="page" class="site-main hfeed site">
 

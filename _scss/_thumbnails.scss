@@ -66,3 +66,16 @@ a.wp-caption:hover {
   color: $gray;
 }
 
+// WP-Property
+#footer-sidebar {
+  .property_widget_block a {
+  border:none;
+  }
+  .property_widget_block li span.attribute,
+  .wpp_child_properties_widget .property_widget_block li, 
+  .wpp_other_properties_widget .property_widget_block li, 
+  .wpp_latest_properties_widget .property_widget_block li, 
+  .wpp_featured_properties_widget .property_widget_block li {
+    color:$white;
+  }
+}
