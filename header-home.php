@@ -74,7 +74,9 @@
 				
 				<a href="#menu" class="menu-link">Menu</a>
 
-				<a href="tel:+19542345917" class="call-link"><i class="icon-phone"></i></a>
+				<!-- <a href="tel:+19542345917" class="call-link"><i class="icon-phone"></i></a> -->
+
+				
 
 			</div>
 							<nav id="menu" role="navigation" class="site-navigation main-navigation">
