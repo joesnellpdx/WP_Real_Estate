@@ -15,19 +15,17 @@ get_header('home'); ?>
 
 		<div id="primary" class="content-area row-fluid"> 
 			<div id="content" class="site-content span12" role="main">
-					<div id="home-base" class="span12">
+					<div id="home-base" class="span12 btn btn-blue">
 						<hgroup class="hgroup group row-fluid">
 							<div class="home-title span12">
 								<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							</div>
-							<div class="sub-head">
-								<div class="head-description span6">
-									<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-									<h3>Real Estate Agent. Builder. Contractor.</h3>
-								</div>
-								<div class="quick-links contact-link span6">
+							<div class="head-description span12">
+								<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+								<h3>Real Estate Agent. Builder. Contractor.</h3>
+								<div class="quick-links">
 									<p>
-										<a href="http://www.boomerhomeadvisor.com/contact/" class="btn  btn-blue">Contact Me</a>
+										<a href="http://www.boomerhomeadvisor.com/contact/" class="btn btn-success">Contact Me</a>
 									</p>
 								</div>
 							</div>

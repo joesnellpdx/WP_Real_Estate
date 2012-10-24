@@ -12,9 +12,8 @@
 	background: none;
 	clear: both;
 	display: block;
-	border: 1px solid #ddd;
+	border: none;
 	@include border-radius(4px);
-	@include box-shadow(0 1px 3px rgba(0,0,0,.055));
 	@include transition(all .2s ease-in-out);
 }
 /* =Header
@@ -135,10 +134,69 @@ cursor: default;
 	text-align:center;
 	width:50%;
 	margin:0 auto;
-	padding: 3% 0 8% 0;
+	padding: 1em 0 2em 0;
 }
 .flex-direction-nav li {
 	list-style-type:none;
+	a {
+		display: inline-block;
+  @include ie7-inline-block();
+  padding: 4px 14px;
+  margin-bottom: 0; // For input.btn
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  *line-height: $baseLineHeight;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  @include buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
+  border: 1px solid $btnBorder;
+  *border: 0; // Remove the border to prevent IE7's black border on input:focus
+  border-bottom-color: darken($btnBorder, 10%);
+  @include border-radius(4px);
+  @include ie7-restore-left-whitespace(); // Give IE7 some love
+  @include box-shadow(#{inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)});
+
+  // Hover state
+  &:hover {
+    color: $grayDark;
+    text-decoration: none;
+    background-color: darken($white, 10%);
+    *background-color: darken($white, 15%); /* Buttons in IE7 don't get borders, so darken on hover */
+    background-position: 0 -15px;
+
+    // transition is only when going to hover, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+  }
+
+  // Focus state for keyboard and accessibility
+  &:focus {
+    @include tab-focus();
+  }
+
+  // Active state
+  &.active,
+  &:active {
+    background-color: darken($white, 10%);
+    background-color: darken($white, 15%) \9;
+    background-image: none;
+    outline: 0;
+    @include box-shadow(#{inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)});
+  }
+
+  // Disabled state
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    background-color: darken($white, 10%);
+    background-image: none;
+    @include opacity(65);
+    @include box-shadow(none);
+  }
+
+}
+
 }
 .flex-direction-nav li:first-child {
 	float:left;
@@ -189,9 +247,7 @@ cursor: default;
 
 // FLEXSLIDER
 .flexslider {
-  border: 1px solid #ddd;
   @include border-radius(4px);
-  @include box-shadow(0 1px 3px rgba(0,0,0,.055));
   @include transition(all .2s ease-in-out);
 
 }
@@ -208,7 +264,7 @@ cursor: default;
   margin-top:-50px;
   height:50px;
   padding-left:($gridGutterWidth);
-  background-color:rgba(0,100,205,.5);
+  background-color:rgba(6,6,6,.3);
   width:100%;
   list-style-type:none;
   color:white;

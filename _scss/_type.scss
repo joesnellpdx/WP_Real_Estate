@@ -105,6 +105,9 @@ h4 small { font-size: 14px; }
   color:white;
   font-size:($baseFontSize + 2);
   padding-left:$gridGutterWidth;
+  line-height: 1.4em;
+  padding-top: .5em;
+  padding-bottom: .5em;
 
 }
 article .entry-title h2 {
@@ -118,7 +121,7 @@ article .entry-title h2 {
 }
 
 .head-description {
-  padding-bottom: 1em;
+  padding-bottom: 0px;
 }
 .head-description h2 {
   line-height:1em;
@@ -128,21 +131,26 @@ article .entry-title h2 {
 .head-description h3 {
   line-height:1em;
   text-align:center;
+
 }
   // HOME Styling
 .home-title h1 {
   padding-top:.5em;
+  margin:0;
   line-height:1em;
   text-align:center;
   font-size:30px;
 }
 
-.head-description h2 {
-  line-height:1em;
+.home-title h1 a {
+  color:$mainAccent;
+}
+.sub-head h2 {
+  line-height:.5em;
   text-align:center;
   font-size:18px;
 }
-.head-description h3 {
+.sub-head h3 {
   font-size: 14px;
   line-height:1em;
   text-align:center;

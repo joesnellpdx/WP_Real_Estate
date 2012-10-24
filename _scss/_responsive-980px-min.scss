@@ -15,6 +15,10 @@
 #content {
   padding: 0 $gridGutterWidth;
   }
+.sub-head {
+  width:70%;
+  margin:0 auto;
+}
 .home-title h1 {
   padding-top:.5em;
   line-height:1em;
@@ -24,13 +28,22 @@
 
 .head-description h2 {
   line-height:1em;
-  text-align:center;
+  text-align:right;
   font-size:30px;
 }
 .head-description h3 {
   font-size: 16px;
   line-height:1em;
-  text-align:center;
+  text-align:right;
+
+}
+#content .head-description {
+  padding-left:0px;
+}
+#content .contact-link {
+  padding-top:1em;
+  text-align:left;
+  padding-right:0px;
 
 }
 

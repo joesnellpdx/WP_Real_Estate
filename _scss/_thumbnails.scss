@@ -65,6 +65,12 @@ a.wp-caption:hover {
   padding: 9px;
   color: $gray;
 }
+.sidebar_property_thumbnail img {
+  position:absolute;
+  left:0;
+  width:40px;
+  @include border-radius(5px);
+}
 
 // WP-Property
 #footer-sidebar {

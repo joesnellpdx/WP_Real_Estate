@@ -135,11 +135,12 @@ function wp_real_estate_scripts() {
 
 	//wp_enqueue_script( 'modernizer', get_template_directory_uri() . '/_js/vendor/modernizr-2.6.1-respond-1.1.0.min.js', array( 'javascript' ), '20120206');
 
-	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/_js/main-ck.js', array( 'jquery' ), '20120901', true  );
 	
 	wp_enqueue_script( 'flexslider_js', get_template_directory_uri() . '/_js/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '20120901', true  ); 
 
 	wp_enqueue_script( 'chirp', get_template_directory_uri() . '/_js/chirp.min.js', array( 'jquery' ), '20120823'  );
+
+	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/_js/main-ck.js', array( 'jquery' ), '20120901', true  );
 
 
 	//wp_enqueue_script( 'main_js', get_template_directory_uri() . '/_js/main-ck.js', array( 'javascript' ), '20120206', true);

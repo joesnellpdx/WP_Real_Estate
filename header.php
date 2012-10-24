@@ -73,7 +73,9 @@
 				
 				<a href="#menu" class="menu-link">Menu</a>
 
-				<a href="tel:+18005550199" class="call-link"><i class="icon-phone"></i></a>
+				<div class="call-link call-link-base">
+					<span class="icon-phone icon"><a href="tel:+19542345917">954-234-5917</a></span>
+				</div>
 				
 				<hgroup class="hgroup">
 					<div class="head-title">

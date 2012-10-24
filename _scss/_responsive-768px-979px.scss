@@ -29,17 +29,32 @@
   line-height:1em;
   text-align:center;
   font-size:50px;
+  text-align:left;
+}
+#content .head-description {
+  float:left;
+  width:50%;
 }
 
-.head-description h2 {
+.sub-head h2 {
   line-height:1em;
-  text-align:center;
+  text-align:left;
   font-size:30px;
 }
-.head-description h3 {
+.sub-head h3 {
   font-size: 16px;
   line-height:1em;
-  text-align:center;
+  text-align:left;
+}
+#content .contact-link {
+  padding-top:1em;
+  float:left;
+  width:50%;
+  text-align:left;
+  margin-left:0px;
+}
+.head-title h2 {
+  padding-left:2em;
 }
 
 }

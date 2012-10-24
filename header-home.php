@@ -74,16 +74,12 @@
 				
 				<a href="#menu" class="menu-link">Menu</a>
 
-				<!-- <a href="tel:+19542345917" class="call-link"><i class="icon-phone"></i></a> -->
-
-				
+				<div class="call-link">
+					<span class="icon-phone icon"><a href="tel:+19542345917">954-234-5917</a></span>
+				</div>
 
 			</div>
-							<nav id="menu" role="navigation" class="site-navigation main-navigation">
+				<nav id="menu" role="navigation" class="site-navigation main-navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</nav>
-
-			
-
-			
 			<div class="container-fluid">

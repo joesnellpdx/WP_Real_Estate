@@ -1,15 +1,13 @@
-@media screen and (min-width: 400px) {
-  .head-title h2{
-    font-size:$baseFontSize;
-    line-height:1.5em;
-    margin:1em;
-    padding-top:0;
+@media screen and (max-width: 767px) {
+  .call-link-base {
+    display:none;
   }
 }
 @media screen and (min-width: 41.25em) {
   a.menu-link {
      display: none;
   }
+
 
       .js nav[role=navigation] {
         max-height: none;

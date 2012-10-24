@@ -60,9 +60,6 @@
     zoom:1; /* For IE 6/7 (trigger hasLayout) */
 } 
 // Home styles
-#home-base {
-  margin:2em 0;
-}
 .home-title {
   @include box-sizing(border-box);
   padding-right:10px;
@@ -97,7 +94,7 @@
 // Footer
 .footer-container {
   background-color:$brown;
-  padding:$gridGutterWidth ($gridGutterWidth *2) $gridGutterWidth ($gridGutterWidth *2);
+  padding:$gridGutterWidth;
   color:white;
 }
 .site-footer {
@@ -107,5 +104,13 @@
 // Footer
 .property_widget_block {
   width:100%;
+}
+// Property styles
+.wpp_featured_properties_widget {
+  position:relative;
+}
+.property_widget_block {
+  width:70%;
+  float:right;
 }
 
