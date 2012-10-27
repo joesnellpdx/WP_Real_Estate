@@ -1,0 +1,16 @@
+2012-10-26 21:49:34 identical _css/base.css 
+2012-10-26 21:51:34 identical _css/base.css 
+2012-10-26 21:55:48 identical _css/base.css 
+2012-10-26 21:56:43 identical _css/base.css 
+2012-10-26 21:59:14 identical _css/base.css 
+2012-10-26 22:00:41 identical _css/base.css 
+2012-10-26 22:02:31     error _scss/base.scss (Line 38 of _scss/_layouts.scss: Invalid CSS after "...ottom: 1.4em;ß": expected "{", was "}")
+2012-10-26 22:02:31 overwrite _css/base.css 
+2012-10-26 22:02:36 identical _css/base.css 
+2012-10-26 22:03:35 identical _css/base.css 
+2012-10-26 22:19:14 overwrite _css/base.css 
+2012-10-26 22:22:21 identical _css/base.css 
+2012-10-26 22:23:26 identical _css/base.css 
+2012-10-26 23:23:58 overwrite _css/base.css 
+2012-10-26 23:25:31 identical _css/base.css 
+2012-10-26 23:36:19 overwrite _css/base.css 

@@ -249,6 +249,7 @@ cursor: default;
 .flexslider {
   @include border-radius(4px);
   @include transition(all .2s ease-in-out);
+  max-height:618px;
 
 }
  .flex-viewport ul {
