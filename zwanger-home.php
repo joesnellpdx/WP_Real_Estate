@@ -2,10 +2,6 @@
 /**
 Template Name: zwanger-home
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
  *
  * @package WP_Real_Estate
  * @since WP_Real_Estate 1.0
@@ -43,6 +39,15 @@ get_header('home'); ?>
 								<div class="flexslider">
 									<?php echo do_shortcode("[featured_properties type='all' stats='price' image_type='large' per_page=3]"); ?>
 								</div>
+							</div>
+							<div class="home-contnet">
+								<?php while ( have_posts() ) : the_post(); ?> 
+
+								<?php get_template_part( 'content', 'page' ); ?>
+
+								<?php comments_template( '', true ); ?>
+
+				<?php endwhile; // end of the loop. ?>
 							</div>
 						
 							<div class="latest-posts sumgroup">
