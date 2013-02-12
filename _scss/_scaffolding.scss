@@ -61,9 +61,9 @@ img {
   @include border-radius(500px);
 }
 iframe {
-  width:100%;
-  padding:.5em;
-  @include box-sizing(border-box);
+  // width:100%;
+  // padding:.5em;
+  // @include box-sizing(border-box);
 
 }
 

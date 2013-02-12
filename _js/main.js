@@ -1,6 +1,9 @@
 // CUSTOM JS ADD
 // FOR JOESNELL THEME
 // ++++++++++++++++++++++++++++++++++++++++++
+// 
+
+// @codekit-prepend "fitvids.js"
 
 jQuery(document).ready(function($) {
 
@@ -30,5 +33,8 @@ jQuery(document).ready(function($) {
   setTimeout(function () {
     window.scrollTo(0, 1);
   }, 1000);
+  $( ".textwidget" ).fitVids();
+  $( ".post" ).fitVids();
+
 
 });

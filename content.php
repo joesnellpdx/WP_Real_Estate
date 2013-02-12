@@ -23,7 +23,7 @@
 	<?php else : ?>
 	<div class="entry-content">
 		<div class="the-excerpt">
-			<?php the_excerpt(); ?>
+			<?php the_content(); ?>
 		</div>
 		<!-- <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp_real_estate' ) ); ?> -->
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'wp_real_estate' ), 'after' => '</div>' ) ); ?>

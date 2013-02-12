@@ -35,6 +35,7 @@ get_header('home'); ?>
 				<div class="main-contain span8">
 
 					<?php while ( have_posts() ) : the_post(); ?> 
+						
 
 						<?php get_template_part( 'content', 'home' ); ?>
 

@@ -204,3 +204,20 @@ function my_gallery_to_slideshow_settings( $params ){
     return $params;
 }
 add_filter( 'mv_gallery_to_slideshow_js_params', 'my_gallery_to_slideshow_settings' );
+
+// Grab video embed from posts
+
+function catch_video() {
+  global $post, $posts;
+  $first_vid = '';
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all('/<iframe.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  $first_vid = $matches [1] [0];
+
+  if ($output == '1') {
+  echo '<iframe width="450" height="310" src="';
+  echo $first_vid;
+  echo '" frameborder="0" allowfullscreen></iframe>';
+  }
+}
